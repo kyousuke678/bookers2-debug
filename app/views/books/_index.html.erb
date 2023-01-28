@@ -20,6 +20,7 @@
         <td id="favorite_buttons_<%= book.id %>">
           <%= render "favorites/favorite-btn", book: book %>
         </td>
+        <td class="view-count">閲覧数: <%= book.view_counts.count %></td>
       </tr>
     <% end %>
   </tbody>
